@@ -13,11 +13,21 @@ public class TheArrayProblem
         Product window = new Product("Glass Window", 10);
 
         // Create
+
         Product[] products = {door, floorPanel};
+
         // Print
-        System.out.println(products);
+
+        System.out.println(Arrays.toString(products));
+
         // Add
+
+        products = add(window, products);
+        System.out.println(Arrays.toString(products));
+
         // Duplicate
+        products = add(window, products);
+        System.out.println(Arrays.toString(products));
     }
 
     private static Product[] add(Product product, Product[] array)
