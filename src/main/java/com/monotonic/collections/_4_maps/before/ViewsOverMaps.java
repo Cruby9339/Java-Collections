@@ -14,6 +14,8 @@ public class ViewsOverMaps
         idToProduct.put(2, ProductFixtures.floorPanel);
         idToProduct.put(3, ProductFixtures.window);
 
+
+
         Set<Integer> ids = idToProduct.keySet();
         System.out.println(ids);
         System.out.println(idToProduct);
