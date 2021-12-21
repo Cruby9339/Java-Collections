@@ -20,18 +20,18 @@ public class Java8Enhancements
         });
 
 
-//       Product product = idToProduct.computeIfAbsent(4,
-//                id -> new Product(id, "Door Handle", 5));
-//
-//        System.out.println(product);
-//        System.out.println(idToProduct.get(3));
+       Product product = idToProduct.computeIfAbsent(4,
+                id -> new Product(id, "Door Handle", 5));
 
-//        System.out.println(idToProduct);
-//
-//        idToProduct.replaceAll((id, prod) ->{
-//            return  new Product(id, prod.getName(), prod.getWeight() + 10);
-//        });
-//
+        System.out.println(product);
+        System.out.println(idToProduct.get(3));
+
+        System.out.println(idToProduct);
+
+        idToProduct.replaceAll((id, prod) ->{
+            return  new Product(id, prod.getName(), prod.getWeight() + 10);
+        });
+
 //        System.out.println(idToProduct);
 
 //        Product product = idToProduct.getOrDefault(4, defaultProd);
